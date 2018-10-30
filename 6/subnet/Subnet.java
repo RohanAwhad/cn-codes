@@ -28,6 +28,8 @@ class Subnet{
 		for(int i=0; i<32;i++) fbip[i] = (int)bip.charAt(i)-48; //convert cahracter 0,1 to integer 0,1
 		for(int i=31;i>31-bits;i--)//Get first address by ANDing last n bits with 0
 			fbip[i] &= 0;
+			
+			
 		String fip[] ={"","","",""};
 		for(int i=0;i<32;i++)
 			fip[i/8] = new String(fip[i/8]+fbip[i]);

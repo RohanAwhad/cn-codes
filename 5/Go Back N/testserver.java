@@ -64,7 +64,7 @@ class testserver
 					catch(Exception e){}
 
 					int a=in.read();
-
+					System.out.println(a);
 					if(a!=255)
 					{
 						System.out.println("received ack for frame no: "+i+" as "+a);
